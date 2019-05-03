@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <!-- Get the cdns for bootstrap and JQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+    <!-- Apparently we need to import something Called chosen, to help us with the selections -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+  <style>
+    body
+    {
+        background-color: rgb(136, 136, 255);
+        /* padding:10px; */
+    }
+    #about
+    {
+        background-color: rgb(107, 107, 107);
+        border-radius: 10px;
+        color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    #title
+    {
+        margin: auto;
+        text-align: center;
+    }
+    #questions
+    {
+        background-color: rgb(107, 107, 107);
+        border-radius: 10px;
+        color: white;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">The Office Dating Service!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <a href="https://jwilly117.github.io/portfolio/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Back to Portfolio</a>
+          </form>
+        </div>
+      </nav>
+    <div class="container">
+            <h1 id="title">Dunder Dating!</h1>
+            <hr>
+        <!-- Tell us about yourself -->
+        <div id="about"> 
+            <h2>Tell Us a little about yourself!!</h2>
+            <h3>Input Your Name</h3>
+            <input type="text" id="name" class="form-control" required>
+
+        </div>
+        <div id="questions">
+            <h2>See which employee best fits your personality</h2>
+            <hr>
+
+            <h3>Question 1</h3>
+            <h4>You sometimes procrastinate to avoid work</h4>
+
+            <select class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+
+                  <br>
+                  <br>
+                  <hr>
+
+                  <h3>Question 2</h3>
+            <h4> You'd rather see yourself singing accapella, than at work </h4>
+
+            <select class="chosen-select" id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+
+                  <br>
+                  <br>
+                  <hr>
+
+                  <h3>Question 3</h3>
+            <h4> You find people enjoying themselves to be somewhat annoying</h4>
+
+            <select class="chosen-select" id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+
+                  <br>
+                  <br>
+                  <hr>
+
+                  <h3>Question 4</h3>
+            <h4> You sometimes might spend a weekend farming beets, or thinking about beets</h4>
+
+            <select class="chosen-select" id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+
+                  <br>
+                  <br>
+                  <hr>
+
+                  <h3>Question 5</h3>
+            <h4> You find yourself playing pranks on others sometimes at the workplace</h4>
+
+            <select class="chosen-select" id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+
+                  <br>
+                  <br>
+                  <hr>
+
+                  <h3>Question 6</h3>
+            <h4> You like refredgerators </h4>
+
+            <select class="chosen-select" id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+
+                  <br>
+                  <br>
+                  <hr>
+
+                  <h3>Question 7</h3>
+            <h4> Sometimes, things people say go over your head </h4>
+
+            <select class="chosen-select" id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+
+                  <br>
+                  <br>
+                  <hr>
+
+                  <h3>Question 8</h3>
+            <h4> You did not know that mens and womens suits have buttons on the opposite sides</h4>
+
+            <select class="chosen-select" id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+
+                  <br>
+                  <br>
+                  <hr>
+
+                  <h3>Question 9</h3>
+            <h4> You find it amusing to correct others, and sometimes assume they are wrong automatically</h4>
+
+            <select class="chosen-select" id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+
+                  <br>
+                  <br>
+                  <hr>
+
+                  <h3>Question 10</h3>
+            <h4> Bears, Beets, ...Battlestar Galactica </h4>
+
+            <select class="chosen-select" id="q10">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                  </select>
+
+                  <br>
+                  <br>
+                  <hr>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                    Submit</button>
+               
+                   <hr>
+                    
+
+        </div>
+
+
+    </div>
+        
+    <!-- Now we make a modal to display the results of your best match from the office  -->
+    <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+        
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                  <h2 id="match-name"></h2>
+                  <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+        
+            </div>
+     </div>
+
+
+     <!-- We now write the scirpt which will handle clicking the submit button -->
+     <script type="text/javascript">
+        // Chosen CSS
+        var config = {
+          ".chosen-select": {},
+          ".chosen-select-deselect": {
+            allow_single_deselect: true
+          },
+          ".chosen-select-no-single": {
+            disable_search_threshold: 10
+          },
+          ".chosen-select-no-results": {
+            no_results_text: "Oops, nothing found!"
+          },
+          ".chosen-select-width": {
+            width: "95%"
+          }
+        };
+    
+        for (var selector in config) {
+          $(selector).chosen(config[selector]);
+        }
+    
+        // Capture the form inputs
+        $("#submit").on("click", function(event) {
+          event.preventDefault();
+    
+          // Form validation
+          function validateForm() {
+            var isValid = true;
+            $(".form-control").each(function() {
+              if ($(this).val() === "") {
+                isValid = false;
+              }
+            });
+    
+            $(".chosen-select").each(function() {
+    
+              if ($(this).val() === "") {
+                isValid = false;
+              }
+            });
+            return isValid;
+          }
+    
+          // If all required fields are filled
+          if (validateForm()) {
+            // Create an object for the user"s data
+            var userData = {
+              name: $("#name").val(),
+              
+              scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()
+              ]
+            };
+    
+            // AJAX post the data to the friends API.
+            $.post("/api/friends", userData, function(data) {
+    
+              // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+              $("#match-name").text(data.name);
+              $("#match-img").attr("src", data.photo);
+    
+              // Show the modal with the best match
+              $("#results-modal").modal("toggle");
+    
+            });
+          } else {
+            alert("Please Make sure everything is filled out!");
+          }
+        });
+      </script>
+
+
+
+</body>
+</html>
