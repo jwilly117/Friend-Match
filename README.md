@@ -13,9 +13,9 @@ The project is made esentially with one page styled using the materialize CSS li
 Input your name and your desired date, usually the users birthday, and then click submit. Then the app will pull information from its two API's about relative articles and events and display them down below in two collumns. Then, if a user desires, you can share an event by clicking the button next to the article. The last 30 shared articles will reflected on the left. 
 
 ### Deployment & Screenshot
-[Link to Deployment]( )
+[Link to Deployment](https://secure-sierra-83679.herokuapp.com/)
 
-![image](https://imgur.com/S1p)
+![image](https://imgur.com/J7sRGbY.png)
 
 ### Future of this project
 The future potential of this project would be to enhance the user experience with a more fluid page, and to source information from more sources. For example, one idea was show information about famous birthdays on specified dates in history. 
