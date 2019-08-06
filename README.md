@@ -1,16 +1,16 @@
 # Friend Match
 
 ### Summary
-WHHW is an intuitive way to search for events and NYT articles on a certain day, primarily a persons birthday. It pulls from the NYT API from their database of articles and from the another API for famous events in history. It then allows users to input their name or a name of their choice and share an article of their choosing to the social panel over on the left hand side of the screen
+Friend match is essentially a small dating service game with the theme of the office. It takes users inputs and matches them with the most appropriate employee from the TV show. 
 
 ### The goal of this project
-The goal was to make a simple page and catch the attention of potentially a room full of people with a quick, easy, and unique social experience based around dates in history. 
+To demonstrate how one would build a match system based on values from an array of "people" objects and their assigned values. 
 
 ### File Structure
-The project is made esentially with one page styled using the materialize CSS library, and interacting with Two different API's to retrieve information. To share that information, the side pushes and pulls from a firebase table into a share section on the left. 
+The site is built as a series of inputs, which are then added up and matched to the closest employee. The employees are stored in a .js file as objects with names, images, and an array of numbers assigned as values for certain traits.
 
 ### Instructions
-Input your name and your desired date, usually the users birthday, and then click submit. Then the app will pull information from its two API's about relative articles and events and display them down below in two collumns. Then, if a user desires, you can share an event by clicking the button next to the article. The last 30 shared articles will reflected on the left. 
+Upon loading the main page, the user can click the "take quiz now" button to be taken to the list of questions which will qualify them for a match. Once a user completes all the questions, the code will take into account the values input by the user and match them with the "best" employee for them. 
 
 ### Deployment & Screenshot
 [Link to Deployment](https://secure-sierra-83679.herokuapp.com/)
@@ -18,5 +18,4 @@ Input your name and your desired date, usually the users birthday, and then clic
 ![image](https://imgur.com/J7sRGbY.png)
 
 ### Future of this project
-The future potential of this project would be to enhance the user experience with a more fluid page, and to source information from more sources. For example, one idea was show information about famous birthdays on specified dates in history. 
-
+I would like to sometime add more questions or make this more thorough just for proof of concept, and of course polish the UI. 
